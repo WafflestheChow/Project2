@@ -13,5 +13,12 @@ public abstract class Date212List {
         return length;
     }
 
+    public void append(Date212 date){
+        Date212Node dn = new Date212Node(date);
+        last.next = dn;
+        last = dn;
+        length++;
+    }
+
 
 }
