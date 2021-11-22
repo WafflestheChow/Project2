@@ -1,5 +1,7 @@
 package company;
 
+import java.text.ParseException;
+
 public abstract class Date212List {
 
     //Set up first node as a dummy node;
@@ -13,11 +15,26 @@ public abstract class Date212List {
         return length;
     }
 
-    public void append(Date212 date){
-        Date212Node dn = new Date212Node(date);
+    public void append(Date212 x){
+        Date212Node dn = new Date212Node(x);
         last.next = dn;
         last = dn;
         length++;
+    }
+    public void sort(Date212 n) throws ParseException {
+        Date212Node temp = new Date212Node(n);
+        Date212Node first = this.first;
+
+        while(first.next != null && first.next.data.compareTo(temp.data)){
+            first = first.next;
+        }
+
+        temp.next = first.next;
+        first.next = temp;
+
+        if(temp.next == null){
+            this.last = temp;
+        }
     }
 
 
