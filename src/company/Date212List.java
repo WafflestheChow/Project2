@@ -36,6 +36,4 @@ public abstract class Date212List {
             this.last = temp;
         }
     }
-
-
 }
