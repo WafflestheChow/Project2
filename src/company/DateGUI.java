@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Date212GUI {
+public class DateGUI {
     public static TextArea unsorted = new TextArea();
     public static TextArea sorted = new TextArea();
     //Declare variables
@@ -65,6 +65,8 @@ public class Date212GUI {
         }
         return fDates;
     }
+
+
 
     //fDates from readNumbers passed as a parameter.
     public void selectionSort(ArrayList<Date212> inputArray) throws ParseException {

@@ -5,10 +5,10 @@ import java.text.ParseException;
 
 public class Project2 {
     public static void main(String[] args) throws FileNotFoundException, ParseException {
-        Date212GUI hello = new Date212GUI();
+        DateGUI hello = new DateGUI();
         if(args.length > 0){
             String name = args[0];
-            Date212GUI.setFileName(name);
+            DateGUI.setFileName(name);
             hello.readNumbers(name);
             hello.runDate();
         }
