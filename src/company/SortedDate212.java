@@ -1,4 +1,4 @@
 package company;
 
-public class SortedDate212 {
+public class SortedDate212 extends Date212List {
 }
