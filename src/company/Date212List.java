@@ -36,4 +36,15 @@ public abstract class Date212List {
             this.last = temp;
         }
     }
+
+    public String toString() {
+        Date212Node n = this.first.next;
+
+        String dates;
+        for(dates = ""; n != null; n = n.next) {
+            dates = dates + n.data + " \n";
+        }
+
+        return dates;
+    }
 }
