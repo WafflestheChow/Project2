@@ -58,10 +58,10 @@ public class DateGUI {
         ArrayList<Date212> fDates = new ArrayList<>(); //set up new Array to be passed to selectionSort()
 
         for (String rawDate : rawDates) { //iterate through the unprocessed dates.
-            date = new Date212(rawDate);
-            System.out.println(date);
-            UnSortedDays.add(date);
-            SortedDays.add(date);
+            date = new Date212(rawDate); //create new date
+            //System.out.println(date); //verify if date correct
+            UnSortedDays.add(date); //add to unsorted nodes
+            SortedDays.add(date); // add to sorted nodes
         }
         unsorted.append(UnSortedDays.toString() + "\n");
         sorted.append(SortedDays.toString() + "\n");
